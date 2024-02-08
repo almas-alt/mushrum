@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background Image Slider</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100vh;
+      height: 200vh;
+      background-size: cover;
+      background-position: center;
+      transition: background-image 0.5s ease;
+      
+    }
+  </style>
+</head>
+<body>
+    <div class="head">
+        <h1>ooey Mushroom</h1>
+        <h1>pooyina janmalo manaki edho sambhandam unde untadeee...lekapothey intha mandilo nuvvu matrame naku ela parichayam avuthaav..</h1>
+        <h1>Thanks for always being there! Without you, I am nothing in any respect. Will you stay with me at my side all the time?</h1>
+        <h1>Hey cute, on this Propose Day, I can’t help but imagine a future with you. Will you be making my desires become genuine through being my forever girl?</h1>
+        <h1>happy propose day elevel</h1>
+
+    </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const images = ["love4.jpg", "pic1.jpg", "love2.jpg","pic2.jpg", "love3.jpg", "pic3.jpg"]; // Add more image URLs as needed
+      let index = 0;
+
+      function changeBackground() {
+        document.body.style.backgroundImage = `url(${images[index]})`;
+        index = (index + 1) % images.length;
+      }
+
+      setInterval(changeBackground, 2000); // Change background every 2 seconds
+    });
+  </script>
+</body>
+</html>
